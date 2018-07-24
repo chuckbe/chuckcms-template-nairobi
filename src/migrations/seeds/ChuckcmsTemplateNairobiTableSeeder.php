@@ -65,6 +65,8 @@ class ChuckcmsTemplateNairobiTableSeeder extends Seeder
         Template::create([
             'name' => 'ChuckCMS Template Nairobi',
             'slug' => 'chuckcms-template-nairobi',
+            'hintpath' => 'chuckcms-template-nairobi',
+            'path' => 'chuckbe/chuckcms-template-nairobi',
             'type' => 'default',
             'version' => '0.1',
             'author' => 'Karel Brijs (karel@chuck.be)',
