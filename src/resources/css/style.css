@@ -1000,6 +1000,7 @@ html[xmlns] .slider-wrap {display: block;}
 }
 
 #header.transparent-header.floating-header + #slider,
+#header.transparent-header + #page-title.page-title-parallax,
 #header.transparent-header.floating-header + #google-map {
 	top: -160px;
 	margin-bottom: -160px;

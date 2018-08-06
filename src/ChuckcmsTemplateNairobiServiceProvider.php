@@ -2,6 +2,8 @@
 
 namespace Chuckbe\ChuckcmsTemplateNairobi;
 
+use Chuckbe\ChuckcmsTemplateNairobi\Commands\PublishNairobi;
+
 use Illuminate\Support\ServiceProvider;
 
 class ChuckcmsTemplateNairobiServiceProvider extends ServiceProvider
@@ -14,6 +16,12 @@ class ChuckcmsTemplateNairobiServiceProvider extends ServiceProvider
     public function boot()
     {   
         $this->loadMigrationsFrom(__DIR__.'/migrations');
+
+        if ($this->app->runningInConsole()) {
+            $this->commands([
+                PublishNairobi::class,
+            ]);
+        }
         
         //php artisan vendor:publish --tag=chuckcms-template-nairobi-public --force
         $this->publishes([
