@@ -46,6 +46,9 @@ class ChuckcmsTemplateNairobiTableSeeder extends Seeder
         $css['responsive']['href'] = 'chuckbe/chuckcms-template-nairobi/css/responsive.css';
         $css['responsive']['asset'] = 'true';
 
+        $css['fa']['href'] = 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css';
+        $css['fa']['asset']  'false';
+
         // $css['colors']['href'] = 'chuckbe/chuckcms-template-nairobi/css/colors.php?color=2196F3';
         // $css['colors']['asset'] = 'false';
         
