@@ -6,4 +6,4 @@
 
 2. Publish the theme:
 
-``` php artisan chuckcms-template-antwerp:publish ```
+``` php artisan chuckcms-template-nairobi:publish ```

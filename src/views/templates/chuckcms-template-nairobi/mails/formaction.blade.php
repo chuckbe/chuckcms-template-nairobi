@@ -119,7 +119,7 @@
                 <tr>
                     <td align="center" valign="top" style="padding: 25px 0;" class="logo">
                         <a href="#" target="_blank">
-                            <img alt="Logo" src="{{ ChuckSite::getSetting('logo.href') }}" width="250" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 16px;" border="0">
+                            <img alt="Logo" src="{{ URL::to('/') }}{{ ChuckSite::getSetting('logo.href') }}" width="250" style="display: block; font-family: Helvetica, Arial, sans-serif; color: #ffffff; font-size: 16px;" border="0">
                         </a>
                     </td>
                 </tr>
@@ -145,7 +145,7 @@
                         <!-- COPY -->
                         <table width="100%" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td align="left" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666;" class="padding-copy">
+                                <td align="left" style="padding: 20px 0 0 0; font-size: 16px; line-height: 25px; font-family: Helvetica, Arial, sans-serif; color: #666666; white-space: pre-line;" class="padding-copy">
                                 	{!! $mailData['body'] !!}
                                 </td>
                             </tr>
